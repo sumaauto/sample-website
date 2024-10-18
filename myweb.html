@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body{margin: 0; padding: 0; font-family: aerial sans serif; background-color: blueviolet; color: white;}
+		p{flex-direction: column;}
+.top-right{position: absolute; top:0; right:0; margin:10px;}
+.top-right a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: black;
+    font-size: 16px;
+    .top-right a:hover {
+    color: antiquewhite;
+}
+*{box-sizing: border-box;}
+#slideshow{max-wid; th: 1000px; position: relative; margin: auto;}
+.myslides{display: none;}
+.prev,.next{cursor: pointer; position: absolute; top: 50%; width: auto; margin-top: -22px; padding: 16px; color: grey; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 0 3px 3px 0; user-select: none;}
+.next{right: 0; border-radius: 3px 0 0 3px;}
+.prev:hover, .next:hover{background-color: rgba(0,0,0,0.8);}
+.text{color:white; font-size: 12px; padding: 8px 12px; position: absolute; bottom: 8px; width: 100%; text-align: center;}
+.numbertext{color: white; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;}
+.dot{cursor: pointer; height: 15px; width: 15px; margin: 0 2px; background: white; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease;}
+.active, .dot:hover{background-color: antiquewhite;}
+.fade{animation-name: fade; animation-duration: 1.5s;}
+@keyframes fade { from{capacity:.4} to {opacity: 1} }
+	</style>
+	<title>Nour shop</title>
+	<link rel="icon" href="cart.png" type="image/x-icon">
+</head>
+<body>
+	<h1><img src="cart.png" alt="logo"> NOUR SHOP</h1>
+	<p> Our main target is to provide people with a quick and effecient service.</p>
+<p>We sell shoes(adult&baby), clothes(adult&baby), electronic devices, household furniture, kitchen utensils and house decoration materials.</p>
+	<div class="top-right">
+		<a href="menu.html">Menu</a>
+		<a href="guest.html">guest</a>
+		<a href="about.html">About</a>
+	</div>
+<div class="myslides,fade">
+	<div class="numbertext">1/3</div>
+	<img src="shoes.jpg" alt="slide1">
+	<div class="text">Shoes</div>
+	<div class="myslides fade">
+	<div class="numbertext">2/3</div>
+	<img src="clot.jpg.avif" alt="slide2">
+	<div class="text">Clothes</div>
+	<div class="myslides fade">
+	<div class="numbertext">3/3</div>
+	<img src="furn.jpg" alt="slide3">
+	<div class="text">Furniture</div>
+
+	<a class="prev"
+		onclick="plusslides(-1)">&#10094;</a>
+		<a class="next"
+		onclick="plusslides(-1)">&#10095;</a>
+	</div>
+	<br>
+	<div style="text-align: center">
+		<span class="dot"
+		onclick="currentslide(1)"></span>
+		<span class="dot"
+		onclick="currentslide(2)"></span>
+		<span class="dot"
+		onclick="currentslide(3)"></span>
+	</div>
+
+	</body>
+	</html> 
